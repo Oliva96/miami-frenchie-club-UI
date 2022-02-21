@@ -39,23 +39,23 @@ const Team = () => {
   return (
     <div id="team" style={styleTeamSection}>
         <div>
-            <img src='img/team.png' style={{width: '30vw', height: '4vw'}}></img>
+            <img src='img/team.png' alt='' style={{width: '30vw', height: '4vw'}}></img>
         </div>
         <div style={styleContainer}>
             <div style={ownerInfo}>
-                <img src='img/dog1.png' style={styleImg} />
-                <div style={InfoCard}>
-                    
-                </div>
-            </div>
-            <div style={ownerInfo}>
-                <img src='img/dog2.png' style={styleImg} />
+                <img src='img/dog1.png' alt='' style={styleImg} />
                 <div style={InfoCard}>
 
                 </div>
             </div>
             <div style={ownerInfo}>
-                <img src='img/dog4.png' style={styleImg} />
+                <img src='img/dog2.png' alt='' style={styleImg} />
+                <div style={InfoCard}>
+
+                </div>
+            </div>
+            <div style={ownerInfo}>
+                <img src='img/dog4.png' alt='' style={styleImg} />
                 <div style={InfoCard}>
 
                 </div>
@@ -63,13 +63,13 @@ const Team = () => {
         </div>
         <div style={styleContainer2}>
             <div style={ownerInfo}>
-                <img src='img/dog6.png' style={styleImg} />
+                <img src='img/dog6.png' alt='' style={styleImg} />
                 <div style={InfoCard}>
 
                 </div>
             </div>
             <div style={ownerInfo}>
-                <img src='img/dog5.png' style={styleImg} />
+                <img src='img/dog5.png' alt='' style={styleImg} />
                 <div style={InfoCard}>
 
                 </div>

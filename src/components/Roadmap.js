@@ -1,5 +1,5 @@
 
-import React, { useContext, useEffect } from 'react'
+import React from 'react'
 
 const styleRoadmap = {
     backgroundImage: "url('img/doggies.png')",
@@ -86,11 +86,11 @@ export const Roadmap = () => {
   return (
     <div id="roadmap" style={styleRoadmap}>
         <div style={{justifyContent: 'center', paddingTop: '3vw'}}>
-            <img src='img/roadmap.png' style={{width: '35vw', height: '9vw'}}></img>
+            <img src='img/roadmap.png' alt='' style={{width: '35vw', height: '9vw'}}></img>
         </div>
         <div style={row}>
             <div style={col}>
-                <img src='img/1.png' style={styleImg}/>
+                <img src='img/1.png' alt='' style={styleImg}/>
                 <div style={styleCard1}>
                     <div style={styleTitle}>
                         promote the club
@@ -107,7 +107,7 @@ export const Roadmap = () => {
                 </div>
             </div>
             <div style={col}>
-                <img src='img/2.png' style={styleImg}/>
+                <img src='img/2.png' alt='' style={styleImg}/>
                 <div style={styleCard2}>
                     <div style={styleTitle}>
                         open the club
@@ -127,7 +127,7 @@ export const Roadmap = () => {
         </div>
         <div style={row}>
             <div style={col}>
-                <img src='img/3.png' style={styleImg}/>
+                <img src='img/3.png' alt='' style={styleImg}/>
                 <div style={styleCard3}>
                     <div style={styleTitle}>
                         the party goes on
@@ -141,7 +141,7 @@ export const Roadmap = () => {
                 </div>
             </div>
             <div style={col}>
-                <img src='img/4.png' style={styleImg}/>
+                <img src='img/4.png' alt='' style={styleImg}/>
                 <div style={styleCard4}>
                     <div style={styleTitle}>
                     Frenchie puppies drop

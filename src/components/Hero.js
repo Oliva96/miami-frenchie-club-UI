@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="background-path" >
             <img 
                 className="scene" preserveAspectRatio="none" viewBox="0 0 1440 800"
-                src='img/BACKGROUND_2.png' 
+                src='img/BACKGROUND_2.png' alt=''
             />
         </div>
         <div className="hero-center-wrap">

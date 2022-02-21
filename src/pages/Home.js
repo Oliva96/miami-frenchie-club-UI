@@ -1,6 +1,6 @@
-import { useMediaQuery } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+// import { useMediaQuery } from '@mui/material'
+// import { useTheme } from '@mui/material/styles'
 import { About } from '../components/About'
 import { Counter } from '../components/Counter'
 import Hero from '../components/Hero'
@@ -9,8 +9,8 @@ import Team from '../components/Team'
 
 const Home = () => {
 
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  // const theme = useTheme();
+  // const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <div>

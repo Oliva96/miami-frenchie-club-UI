@@ -53,7 +53,7 @@ const Footer = () => {
     <>
     <div style={styleFooter}>
         <div style={logo}>
-            <img src='img/LOGO_Website_1.png' style={{width: '25vw', height: '4.5vw'}} />
+            <img src='img/LOGO_Website_1.png' alt='' style={{width: '25vw', height: '4.5vw'}} />
             <div style={icons}>
                 <TwitterIcon style={socialIcon} className='scrollItem'/>
                 <BsDiscord style={socialIcon} className='scrollItem'/>

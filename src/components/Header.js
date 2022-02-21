@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
-import { Button, Typography } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import React from 'react';
+// import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 
@@ -32,27 +30,13 @@ const styleLink = {
 
 const Header = () => {
 
-  const [top, setTop] = useState(true);
-
-  const handleScroll = () => {
-      if(window.scrollY !== 0) setTop(false);
-      else setTop(true);
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-        window.removeEventListener('scroll', handleScroll);
-    }
-  }, [])
-
   return (
     <div id="menu-wrap" className="menu-back cbp-af-header" style={scrollStyle}>
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <nav className="navbar navbar-expand-lg navbar-light bg-light mx-lg-0">
-                        <a className="navbar-brand" >
+                        <a className="navbar-brand" href='/'>
                             <img style={{width: '20vw', height: '4vw'}}
                                 src="img/LOGO_Website_1.png" alt=""/>
                         </a>
@@ -67,7 +51,7 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Buy</a>
+                                    <a className="nav-link" href="/">Buy</a>
                                 </li>
                                 <li className="nav-item" style={styleLink}>
                                     <ScrollLink smooth className="nav-link" to="about">About</ScrollLink>

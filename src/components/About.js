@@ -86,7 +86,7 @@ export const About = () => {
                 </div>
             </div>
         </div>
-        <img src='img/elipse.png' style={styleImg}/>
+        <img src='img/elipse.png' style={styleImg} alt=''/>
     </div>
   )
 }
