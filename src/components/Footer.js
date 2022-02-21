@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
         <div style={{display: 'block'}}>
             <div style={scrollNav}>
-                <Link to='/' smooth style={scrollItem} className='scrollItem'>Buy</Link>
+                <Link to='/' style={scrollItem} className='scrollItem'>Buy</Link>
                 <ScrollLink smooth to='about' style={scrollItem} className='scrollItem'>about</ScrollLink>
                 <ScrollLink smooth to='roadmap' style={scrollItem} className='scrollItem'>roadmap</ScrollLink>
                 <ScrollLink smooth to='team' style={scrollItem} className='scrollItem'>team</ScrollLink>
