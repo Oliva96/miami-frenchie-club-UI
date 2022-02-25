@@ -6,7 +6,7 @@ const Modal = ({open, handleOpen, handleClose}) => {
     if(window.innerHeight > window.innerWidth) {
       handleOpen();
     }
-  }, [])
+  }, [handleOpen])
   
   return (
       <>
