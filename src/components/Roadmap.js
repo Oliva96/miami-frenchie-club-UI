@@ -2,10 +2,11 @@
 import React from 'react'
 
 const styleRoadmap = {
-    backgroundImage: "url('img/doggies.png')",
+    backgroundImage: "url('img/doggies-back.jpeg')",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    marginTop: '-11vw'
 }
 
 const row = {
@@ -26,22 +27,22 @@ const styleCard1 = {
 const styleCard2 = {
     border: '.5vw solid black',
     width: '33vw', 
-    height: '15.8vw'
+    height: '17.8vw'
 }
 const styleCard3 = {
     border: '.5vw solid black',
     width: '33vw', 
-    height: '14vw'
+    height: '15.9vw'
 }
 const styleCard4 = {
     border: '.5vw solid black',
     width: '33vw', 
-    height: '10vw'
+    height: '11.9vw'
 }
 
 const styleImg = {
     width: '4vw', 
-    height: '5vw',
+    height: '6vw',
     marginRight: '2vw'
 }
 
@@ -56,7 +57,7 @@ const styleTitle = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'Gotham', 
+    fontFamily: 'ARCO', 
     fontWeight: 'bold', 
     textTransform: 'uppercase',
     color: 'black', 
@@ -65,28 +66,49 @@ const styleTitle = {
 
 const styleParagraphGreen = {
     padding: '1vw', 
-    fontFamily: 'Gotham', 
-    fontSize: '1.2vw',
+    fontFamily: 'ARCO', 
+    fontSize: '1.5vw',
     lineHeight: '2vw',
+    letterSpacing: '.1vw',
     color: 'black',
     backgroundColor: '#add8d2'
 }
 
 const styleParagraphWhite = {
     padding: '1vw', 
-    fontFamily: 'Gotham', 
-    fontSize: '1.2vw',
+    fontFamily: 'ARCO', 
+    fontSize: '1.5vw',
     lineHeight: '2vw',
     color: 'black',
+    letterSpacing: '.1vw',
     backgroundColor: 'white'
 }
 
-export const Roadmap = () => {
+const styleListon ={
+    backgroundColor: '#292929',
+    borderTop: '.3vw solid black',
+    borderBottom: '.3vw solid black',
+    height: '8vw',
+    fontFamily: 'ARCO',
+    fontSize: '7vw',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#fcceeb',
+}
+
+const styleSpan = {
+    textAlign: 'center',
+}
+
+const Roadmap = () => {
 
   return (
     <div id="roadmap" style={styleRoadmap}>
-        <div style={{justifyContent: 'center', paddingTop: '3vw'}}>
-            <img src='img/roadmap.png' alt='' style={{width: '35vw', height: '9vw'}}></img>
+        <div style={styleListon} >
+            <span style={styleSpan}>
+               Roadmap
+            </span> 
         </div>
         <div style={row}>
             <div style={col}>
@@ -156,3 +178,5 @@ export const Roadmap = () => {
     </div>
   )
 }
+
+export default Roadmap;

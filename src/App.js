@@ -1,20 +1,28 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { useState } from 'react';
+import Modal from './components/Modal';
+import Buy from './pages/Buy';
 
 function App() {
 
+  const [open, setOpen] = useState(false);
+
   return (
-    
-      <div className="App">
+    <>
+      <Modal open={open} setOpen={setOpen}/>
+      <div className={open ? "App-openModal" : "App"}>
         <Header/>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/buy" element={<Buy/>} />
+          </Routes>
         <Footer/>
       </div>
+    </>
   );
 }
 

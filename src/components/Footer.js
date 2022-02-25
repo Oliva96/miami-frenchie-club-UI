@@ -1,36 +1,16 @@
 import React from 'react';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import { BsDiscord } from 'react-icons/bs';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import { BsDiscord, BsTwitter } from 'react-icons/bs';
+import { FaInstagramSquare } from 'react-icons/fa';
 
 import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const styleFooter = {
-    backgroundColor: '#fcceeb',
-    padding: '4vw 12vw',
-    display: 'flex',
-}
-const logo = {
-
-}
-const icons = {
-    display: 'flex',
-    color: 'black',
-    paddingTop: '1vw',
-    justifyContent: 'space-around',
-}
-const socialIcon = {
-    fontSize: '2.2vw',
-    cursor: 'pointer',
-    marginTop: '8px'
-}
 const scrollNav = {
     display: 'flex',
     width: '40vw',
     justifyContent: 'space-around',
-    marginLeft: '14vw',
-    marginTop: '2vw'
+    margin: '0 auto',
+    marginTop: '3vw'
 }
 const scrollItem = {
     fontFamily: 'ARCO',
@@ -38,42 +18,55 @@ const scrollItem = {
     color: 'black',
     textDecoration: 'none',
     fontSize: '1.5vw',
+    margin: '0',
 }
 const foot = {
     backgroundColor: '#fcceeb', 
     color: 'black', 
-    fontFamily: 'Gotham', 
+    fontWeight: '500',
     fontSize: '2vw', 
-    height: '3vw',
-    paddingBottom: '4vw'
+    marginTop: '2vw'
 }
 
 const Footer = () => {
+
+  let location = useLocation();
+
   return (
     <>
-    <div style={styleFooter}>
-        <div style={logo}>
+    <div className='footer'>
+        <div>
             <img src='img/LOGO_Website_1.png' alt='' style={{width: '25vw', height: '4.5vw'}} />
-            <div style={icons}>
-                <TwitterIcon style={socialIcon} className='scrollItem'/>
-                <BsDiscord style={socialIcon} className='scrollItem'/>
-                <InstagramIcon style={socialIcon} className='scrollItem'/>
+            <div >
+                <BsTwitter className='footerItem'/>
+                <BsDiscord className='footerItem'/>
+                <FaInstagramSquare className='footerItem'/>
             </div>
         </div>
-        <div style={{display: 'block'}}>
+        <div style={{display: 'block', justifyContent: 'center'}}>
+            {
+                location.pathname === '/buy' ? 
+                (
+                    <div style={scrollNav}>
+                        <Link to='/' style={scrollItem} className='footerItem'>Home</Link>
+                    </div>
+                ) : (
+                    <div style={scrollNav}>
+                        <Link to='/buy' style={scrollItem} className='footerItem'>Buy</Link>
+                        <ScrollLink smooth to='about' style={scrollItem} className='footerItem'>about</ScrollLink>
+                        <ScrollLink smooth to='roadmap' style={scrollItem} className='footerItem'>roadmap</ScrollLink>
+                        <ScrollLink smooth to='team' style={scrollItem} className='footerItem'>team</ScrollLink>
+                    </div>
+                )
+            }
+            
             <div style={scrollNav}>
-                <Link to='/' style={scrollItem} className='scrollItem'>Buy</Link>
-                <ScrollLink smooth to='about' style={scrollItem} className='scrollItem'>about</ScrollLink>
-                <ScrollLink smooth to='roadmap' style={scrollItem} className='scrollItem'>roadmap</ScrollLink>
-                <ScrollLink smooth to='team' style={scrollItem} className='scrollItem'>team</ScrollLink>
-            </div>
-            <div style={scrollNav}>
-                <Link to='/' style={scrollItem} className='scrollItem'> terms & conditions </Link>
+                <Link to='/' style={scrollItem} className='footerItem'> terms & conditions </Link>
             </div>
         </div>
-    </div>
-    <div style={foot}>
-        All rights reserved by Miami Frenchie Club
+        <div style={foot}>
+            All rights reserved by Miami Frenchie Club
+        </div>
     </div>
     </>
   )

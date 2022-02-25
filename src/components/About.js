@@ -1,4 +1,13 @@
-import React from 'react'
+import React from 'react';
+
+const styleBack = {
+    borderTop: '.1vw solid #add8d2',
+    height: '45vw',
+    backgroundImage: "url('img/BACKGROUND_11.jpg')",
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover'
+}
 
 const styleListon ={
     backgroundColor: '#292929',
@@ -15,38 +24,29 @@ const styleListon ={
 
 const styleSpan = {
     textAlign: 'center',
-    opacity: '0.9'
-}
-
-const styleImg = {
-    width: '20vw', 
-    height: '20vw',
-    float: 'right',
-    marginTop: '-16vw',
-    marginRight: '1vw',
 }
 
 const styleCard = {
-    width: '53vw',
-    height: '40vw',
-    border: '.7vw solid black',
-    margin: '0 auto'
+    width: '40vw',
+    height: '30vw',
+    border: '.5vw solid black',
+    backgroundColor: 'white',
+    marginLeft: '43vw',
+    marginTop: '3vw',
 }
 
 const styleTitle = {
-    height: '4vw',
-    borderBottom: '0.6vw solid black',
-    borderRight: '0.3vw solid black',
-    backgroundColor: '#fcceeb',
     width: '101%',
-    marginLeft: '-0.2vw',
-    marginTop: '-0.2vw',
+    marginLeft: '-0.1vw',
+    marginTop: '-0.1vw',
+    backgroundColor: '#fcceeb',
+    height: '5vw',
+    borderBottom: '.5vw solid black',
+    borderRight: '.3vw solid black',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
-}
-const styleAbout = {
-    fontFamily: 'Gotham', 
+    justifyContent: 'center',
+    fontFamily: 'ARCO', 
     fontWeight: 'bold', 
     textTransform: 'uppercase',
     color: 'black', 
@@ -54,30 +54,44 @@ const styleAbout = {
 }
 
 const styleParagraph = {
-    padding: '2vw', 
-    fontFamily: 'Gotham', 
-    fontSize: '1.2vw',
+    padding: '1.5vw 2vw', 
+    fontFamily: 'ARCO', 
+    fontSize: '1.5vw',
     lineHeight: '2vw',
     color: 'black',
+    wordSpacing: '.5vw',
 }
 
-export const About = () => {
-    
+const styleAbout = {
+    fontFamily: 'ARCO', 
+    fontWeight: 'bold', 
+    textTransform: 'uppercase',
+    color: 'black', 
+    fontSize: '2.5vw'
+}
+
+const styleImg = {
+    width: '20vw', 
+    height: '20vw',
+    marginTop: '-10vw',
+    marginLeft: '77vw',
+}
+
+const About = () => {
   return (
-    <div id="about">
+    <div id='about'>
         <div style={styleListon} >
             <span style={styleSpan}>
                 welcome to the Miami frenchie club
             </span> 
         </div>
-        {/*//? container */}
-        <div style={{padding: '6vw', justifyContent: 'center'}}>
+        <div style={styleBack}>
             <div style={styleCard}>
                 <div style={styleTitle}>
                     <span style={styleAbout}>About Section</span>
                 </div>
                 <div style={styleParagraph}>
-                    <p>Miami Frenchie Club is a collection of 10,000 unique NFTs randomly 
+                    <p style={{margin: '0'}}>Miami Frenchie Club is a collection of 10,000 unique NFTs randomly 
                         generated on the Ethereum Blockchain. Frenchies are outfitted with 
                         over 100 different characteristics featuring some of Miami’s most 
                         distinct looks as well as popular NFT traits. See our roadmap below 
@@ -90,3 +104,5 @@ export const About = () => {
     </div>
   )
 }
+
+export default About;
