@@ -3,9 +3,6 @@ import './About.scss';
 
 import badge from '../../assets/elipse.png';
 
-const styleImg = {
-}
-
 const About = () => {
   return (
     <div id='about'>
