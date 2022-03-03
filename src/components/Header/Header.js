@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import './Header.scss';
+
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { HiX} from 'react-icons/hi';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { motion } from 'framer-motion';
+import logo from '../../assets/LOGO_Website_1.png';
 
 const Header = () => {
 
@@ -13,8 +16,8 @@ const Header = () => {
   return (
     <nav className='app__navbar'>
         <RouterLink to='/' style={{display: 'flex', alignItems: 'center'}}>
-            <img style={{width: '20vw', height: '4vw'}}
-                src="img/LOGO_Website_1.png" alt=""/>
+            <img className='app__logo'
+                src={logo} alt="logo"/>
         </RouterLink>
 
         <div className="app__navbar-container">

@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import Team from '../components/Team'
-import Roadmap from '../components/Roadmap'
-import About from '../components/About'
+import Hero from '../components/Hero/Hero'
+import Team from '../components/Team/Team'
+import Roadmap from '../components/Roadmap/Roadmap'
+import About from '../components/About/About'
 
 const Home = () => {
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMinusSquare, AiOutlinePlusSquare } from 'react-icons/ai';
+import unrevealFrenchie from '../assets/Frenchie_New_Page.png';
 
 const Buy = () => {
 
@@ -23,17 +24,17 @@ const Buy = () => {
     <div className="buy-page">
       <div className="buy-card">
         <div className="buy-img">
-          <img  src='img/Frenchie_New_Page.png' alt='buy-frenchie'/>
+          <img  src={unrevealFrenchie} alt='buy-frenchie'/>
         </div>
         <div className='buy-description'>the miami frenchie club</div>
         <div className='buy-price'>
-            {`price:  ${price} ETH`}
+            {`price:  ${price.toFixed(2)} ETH`}
         </div>
         <div className='buy-amount'>
             amount:
             <div >
                 <AiOutlineMinusSquare onClick={() => handleAmount(-1)}/>
-                {amount}
+                    {amount}
                 <AiOutlinePlusSquare onClick={() => handleAmount(1)}/>
             </div>
         </div>
