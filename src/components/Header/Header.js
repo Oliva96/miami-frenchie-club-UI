@@ -35,7 +35,7 @@ const Header = () => {
             ) :
             (
                 <ul>
-                    <li><RouterLink className="app__navbar-link" to="/buy">Buy</RouterLink></li>
+                    {/* <li><RouterLink className="app__navbar-link" to="/buy">Mint</RouterLink></li> */}
 
                     <li><ScrollLink smooth className="app__navbar-link" to="about">About</ScrollLink></li>
 
@@ -71,9 +71,9 @@ const Header = () => {
                             </ul>
                         ) : (
                             <ul>
-                                <li onClick={() => setToggle(false)}>
+                                {/* <li onClick={() => setToggle(false)}>
                                     <RouterLink className="app__navbar-link" to="/buy">Buy</RouterLink>
-                                </li>
+                                </li> */}
 
                                 <li>
                                     <ScrollLink 

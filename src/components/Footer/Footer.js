@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
                 ) : (
                     <div className='footer-links-container'>
-                        <Link to='/buy' className='footerItem'>Buy</Link>
+                        {/* <Link to='/buy' className='footerItem'>Buy</Link> */}
                         <ScrollLink smooth to='about' className='footerItem'>about</ScrollLink>
                         <ScrollLink smooth to='roadmap' className='footerItem'>roadmap</ScrollLink>
                         <ScrollLink smooth to='team' className='footerItem'>team</ScrollLink>
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='foot'>
-            All rights reserved by Miami Frenchie Club
+            All rights reserved by tropic ventures llc.
         </div>
     </div>
     </>

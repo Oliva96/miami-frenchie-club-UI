@@ -7,12 +7,14 @@ export default function Hero() {
     <div className="hero_background">
         <div className="hero_container" >
             <div >
-                the best nft collection <br/>
-                in the world
+                the official miami <br/> frenchie club
             </div>
             <div className='buttomHome-wrapper'>
-                <Link className="buttomHome" to="/buy">
-                    Buy for 0.1 ETH
+                <Link className="buttomHome" 
+                // to="/buy"
+                to='/'
+                >
+                    Mint price coming soon
                 </Link>
             </div>
         </div>

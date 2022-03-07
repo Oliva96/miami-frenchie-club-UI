@@ -19,8 +19,8 @@ const About = () => {
                 <div className='about-info'>
                     <p style={{margin: '0'}}>Miami Frenchie Club is a collection of 10,000 unique NFTs randomly 
                         generated on the Ethereum Blockchain. Frenchies are outfitted with 
-                        over 100 different characteristics featuring some of Miami’s most 
-                        distinct looks as well as popular NFT traits. See our roadmap below 
+                        over 100 different characteristics, unique utilities, breeding capabilities and
+                        popular NFT traits. See our roadmap below 
                         and come party with us in our discord! 
                     </p>
                 </div>

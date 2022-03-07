@@ -3,14 +3,23 @@
     border-top: .3vw solid black;
     padding-top: 4vw;
 }
-.team-container {
-    display: flex;
+.team-container-desktop {
     padding: 4vw 5vw 1vw 5vw;
     justify-content: space-around;
 
     @media screen and (max-width: 800px) {
-        flex-direction: column;
-        align-items: center;
+        display: none;    
+    }
+}
+.team-subcontainer {
+    display: flex;
+}
+.team-container-mobile {
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 801px) {
+        display: none;    
     }
 }
 .team-title {
@@ -28,7 +37,7 @@
     padding: 1vw;
 
     @media screen and (max-width: 800px) {
-        width: fit-content;
+        width: 100%;
     }
 }
 .teamMember-img {

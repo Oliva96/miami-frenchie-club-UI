@@ -40,7 +40,7 @@ const Buy = () => {
         </div>
       </div>
       <button className='buy-button'>
-        Buy
+        Mint
       </button>
     </div>
   )

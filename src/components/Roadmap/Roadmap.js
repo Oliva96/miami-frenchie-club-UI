@@ -56,6 +56,9 @@ const Roadmap = () => {
                     <div className='paragraph' style={styleParagraphGreen}>
                         -Mint Price TBD.
                     </div>
+                    <div className='paragraph' style={styleParagraphWhite}>
+                        -Delayed revealed, date TBD.
+                    </div>
                 </div>
             </div>
             
@@ -68,10 +71,13 @@ const Roadmap = () => {
                         the party goes on
                     </div>
                     <div className='paragraph' style={styleParagraphGreen}>
-                    -Holders will have exclusive access to live events in the Miami area.
+                    -Holders will have exclusive access to live events worldwide.
                     </div>
                     <div className='paragraph' style={styleParagraphWhite}>
                         -Merch store opens.
+                    </div>
+                    <div className='paragraph' style={styleParagraphGreen}>
+                    -Private frenchie club events.
                     </div>
                 </div>
             </div>
@@ -82,7 +88,10 @@ const Roadmap = () => {
                     Frenchie puppies drop
                     </div>
                     <div className='paragraph' style={styleParagraphWhite}>
-                    -Holders have whitelist priority to our upcoming drop Frenchie Puppies! 
+                    -Holders will have whitelist priority to our upcoming drop (Frenchie Puppies)! 
+                    </div>
+                    <div className='paragraph' style={styleParagraphGreen}>
+                    -Whitelist details tbd. 
                     </div>
                 </div>
             </div>
