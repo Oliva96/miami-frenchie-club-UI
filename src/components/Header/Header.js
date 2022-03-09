@@ -50,8 +50,9 @@ const Header = () => {
             <BiMenuAltRight onClick={() => setToggle(true)}/>   
             {toggle && (
                 <motion.div
-                    whileInView={{ x: [300, 0]}}
-                    transition={{duration: 0.85, ease: 'easeOut'}}
+                    initial={{ opacity: 0, y: -200 }}
+                    animate={{ opacity: 1, y: [-200, 0] }}
+                    transition={{duration: 1, ease: 'easeInOut'}}
                 >
                     <HiX onClick={() => setToggle(false)}/>
                     {

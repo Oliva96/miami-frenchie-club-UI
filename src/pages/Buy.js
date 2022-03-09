@@ -28,7 +28,7 @@ const Buy = () => {
         </div>
         <div className='buy-description'>the miami frenchie club</div>
         <div className='buy-price'>
-            {`price:  ${price.toFixed(2)} ETH`}
+            {`price: ${price.toFixed(2)} ETH`}
         </div>
         <div className='buy-amount'>
             amount:

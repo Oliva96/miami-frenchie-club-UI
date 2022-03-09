@@ -5,12 +5,7 @@ import badge from '../../assets/elipse.png';
 
 const About = () => {
   return (
-    <div id='about'>
-        <div className='liston'>
-            <span >
-                welcome to the Miami frenchie club
-            </span> 
-        </div>
+    <div id='about'> 
         <div className='about-back'>
             <div className='about-card'>
                 <div className='about-title'>
