@@ -70,17 +70,25 @@ body {
 }
 .buy-description {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  padding: 5px;
   width: 100.5%;
   margin-left: -1px;
   font-family: ARCO;
   font-size: 22px;
-  background-color: white;
-  color: #ff81bc;
+  // background-color: #858383;
+  // color: #ff81bc;
+  color: black;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
+  letter-spacing: .4px;
+
+  span {
+    color: #ff81bc;
+    margin: 5px 0;
+  }
 }
 .buy-price {
   display: flex;

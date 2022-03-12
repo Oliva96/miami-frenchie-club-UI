@@ -11,8 +11,7 @@ export default function Hero() {
             </div>
             <div className='buttomHome-wrapper'>
                 <Link className="buttomHome" 
-                // to="/buy"
-                to='/'
+                to="/buy"
                 >
                     Mint price coming soon
                 </Link>
