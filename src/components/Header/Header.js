@@ -3,15 +3,36 @@ import './Header.scss';
 
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import { HiX} from 'react-icons/hi';
+import { HiX } from 'react-icons/hi';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 import logo from '../../assets/LOGO_Website_1.png';
+import toast from 'react-hot-toast';
+import { Connect } from '../../services/service';
 
 const Header = () => {
 
+  const [wallet, setWallet] = useState(null);
   const [toggle, setToggle] = useState(false);
   let location = useLocation();
+
+  const connect = async () => {
+    if(!wallet) {
+        toast.loading("Connecting...");
+        try {
+            const signer = await Connect();
+            const address = await signer.getAddress();
+            setWallet(address);
+            toast.dismiss();
+            toast.success("Connection Successful");
+        }catch(error) {
+            toast.dismiss();
+            toast.error(`${error}`);
+            console.log(error);
+        }
+    }
+    return;
+  }
 
   return (
     <nav className='app__navbar'>
@@ -27,8 +48,18 @@ const Header = () => {
                 <ul>
                     <li><RouterLink className="app__navbar-link" to="/">Home</RouterLink></li>
                     <li style={{display: 'flex', alignItems: 'center', marginRight: '0'}}>
-                        <button className="buttomNav">
-                            Connect Wallet
+                        <button onClick={connect} className="buttomNav">
+                            {
+                                wallet ? (
+                                    <div>
+                                        {wallet.slice(0,10)} ...
+                                    </div>
+                                ) : (
+                                    <div>
+                                        Connect Wallet      
+                                    </div>
+                                )
+                            } 
                         </button>
                     </li>
                 </ul>

@@ -4,11 +4,11 @@ import unrevealFrenchie from '../assets/Frenchie_New_Page.png';
 
 const Buy = () => {
 
-  const fixPrice = 0.1;
-  const maxAmout = 10;
+  const [fixPrice, setFixPrice] = useState(0.1);
+  const [maxAmout, setMaxAmount] = useState(10);
   const [price, setPrice] = useState(0.1);
   const [amount, setAmount] = useState(1);
-  const [remainsNFTs, setRemainsNFTs] = useState(54);
+  const [remainsNFTs, setRemainsNFTs] = useState(0);
   const [totalNFTs, setTotalNFTs] = useState(10000);
 
   const handleBuyAmount = (increment) => {
@@ -17,13 +17,29 @@ const Buy = () => {
     setAmount(amount + increment);
   }
 
+  const getFixedPrice = () => {
+
+  }
+
+  const getMaxAmount = () => {
+
+  }
+
   const handleRemainsNFTs = () => {
 
   }
 
-  const mint = () => {
+  const mint = async () => {
     
+    // process mint in the contract 
+    setRemainsNFTs(remainsNFTs + amount); // reemplazar por call to handleRemainsNFTs if mint was successfull
   }
+
+  useEffect(() => {
+    getMaxAmount();
+    handleRemainsNFTs();
+    getFixedPrice();
+  }, [])
 
   useEffect(() => {
     setPrice(fixPrice * amount);
@@ -52,7 +68,7 @@ const Buy = () => {
             </div>
         </div>
       </div>
-      <button className='buy-button'>
+      <button onClick={mint} className='buy-button'>
         Mint
       </button>
     </div>
