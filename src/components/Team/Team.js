@@ -13,7 +13,7 @@ const team = [
     { id: 2, memberName: 'Michael Sabina', img: teamMember3, rol: 'social ninja', description: 'I have no real skill, Im just good with people.'},
     { id: 3, memberName: 'Yasmany Perez', img: teamMember4, rol: 'Artist', description: 'Artist & Creative / Senior graphic artist. I draw stuff'},
     { id: 4, memberName: 'Leonardo Cordero', img: teamMember5, rol: 'Wicked Corporate Guy', description: 'insane network of smart people'},
-    { id: 5, memberName: 'William Apespeare', img: teamMember6, rol: 'Advisor Ape', description: 'Helping the Miami Frenchie Club become a great community'}
+    // { id: 5, memberName: 'William Apespeare', img: teamMember6, rol: 'Advisor Ape', description: 'Helping the Miami Frenchie Club become a great community'}
 ];
 
 const Card = ({member, border}) => {
@@ -43,7 +43,7 @@ const Team = () => {
             <div className='team-subcontainer'>
                 <Card key={team[3].id} member={team[3]} border={false}/>
                 <Card key={team[4].id} member={team[4]} border={false}/>
-                <Card key={team[5].id} member={team[5]} border={true}/>
+                {/* <Card key={team[5].id} member={team[5]} border={true}/> */}
             </div>
         </div>
         <div className='team-container-mobile'>
