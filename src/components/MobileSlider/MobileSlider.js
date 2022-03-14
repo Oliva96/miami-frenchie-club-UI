@@ -8,7 +8,7 @@ import frenchie5 from '../../assets/slide/5.jpg';
 import frenchie6 from '../../assets/slide/6.jpg';
 import frenchie7 from '../../assets/slide/7.jpg';
 import frenchie8 from '../../assets/slide/8.jpg';
-import frenchie9 from '../../assets/slide/9.jpg';
+import frenchie9 from '../../assets/slide/9.png';
 import './MobileSlider.scss';
 
 const MobileSlider = () => {

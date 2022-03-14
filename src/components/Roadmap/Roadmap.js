@@ -85,13 +85,13 @@ const Roadmap = () => {
                 <img src={img4} alt='number4' className='numbers'/>
                 <div className='card4'>
                     <div className='title'>
-                    Frenchie puppies drop
+                    Breeding capabilities unlocked!
                     </div>
                     <div className='paragraph' style={styleParagraphWhite}>
-                    -Holders will have whitelist priority to our upcoming drop (Frenchie Puppies)! 
+                    -Holders will have exclusive access to unlock breeding capabilities for their Frenchies! Remember it takes 2 to tango 
                     </div>
                     <div className='paragraph' style={styleParagraphGreen}>
-                    -Whitelist details tbd. 
+                    -More details to follow in Road map V2!
                     </div>
                 </div>
             </div>
