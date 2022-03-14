@@ -20,7 +20,7 @@ const Footer = () => {
                 <a href='https://twitter.com/miafrenchieclub?s=21' target='_blank'  rel='noreferrer'>
                     <BsTwitter className='footerItem'/>
                 </a>
-                <a href='https://discord.gg/mwK2vqYN' target='_blank' rel='noreferrer'>
+                <a href='https://discord.gg/ZtP8JFXeBF' target='_blank' rel='noreferrer'>
                     <BsDiscord className='footerItem'/>
                 </a>
                 <a href='https://instagram.com/miamifrenchieclub?utm_medium=copy_link' target='_blank' rel='noreferrer'>
