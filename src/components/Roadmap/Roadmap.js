@@ -37,7 +37,7 @@ const Roadmap = () => {
                         -Community giveaways / competitions for whitelist spots.
                     </div>
                     <div className='paragraph' style={styleParagraphWhite}>
-                        -List 1/1 for auction, all proceeds go to charity! (animal shelters).
+                        -List 1/1 for auction, all proceeds go to charity!
                     </div>
                 </div>
             </div>
@@ -85,13 +85,13 @@ const Roadmap = () => {
                 <img src={img4} alt='number4' className='numbers'/>
                 <div className='card4'>
                     <div className='title'>
-                    Breeding capabilities unlocked!
+                    Frenchie capabilities unlocked
                     </div>
                     <div className='paragraph' style={styleParagraphWhite}>
-                    -Holders will have exclusive access to unlock breeding capabilities for their Frenchies! Remember it takes 2 to tango 
+                    -Holders will have exclusive access to unlock special capabilities for their Frenchies! Remember it takes 2 to tango 
                     </div>
                     <div className='paragraph' style={styleParagraphGreen}>
-                    -More details to follow in Road map V2!
+                    -More details to follow in Roadmap V2!
                     </div>
                 </div>
             </div>

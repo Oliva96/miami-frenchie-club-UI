@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='foot'>
-            All rights reserved by Tequila labs llc.
+            All rights reserved by Cafecito labs llc.
         </div>
     </div>
     </>
