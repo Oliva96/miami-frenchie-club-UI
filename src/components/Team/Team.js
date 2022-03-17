@@ -1,6 +1,6 @@
 import React from 'react';
 import './Team.scss';
-import teamMember1 from '../../assets/dog1.png';
+import teamMember1 from '../../assets/IMG_5687.jpg';
 import teamMember2 from '../../assets/dog2.png';
 import teamMember3 from '../../assets/image1.jpeg';
 import teamMember4 from '../../assets/dog5.png';
@@ -36,7 +36,7 @@ const Team = () => {
         </div>
         <div className='team-container-desktop'>
             <div className='team-subcontainer'>
-                <Card key={team[0].id} member={team[0]} border={false}/>
+                <Card key={team[0].id} member={team[0]} border={true}/>
                 <Card key={team[1].id} member={team[1]} border={false}/>
                 <Card key={team[2].id} member={team[2]} border={true}/>
             </div>
@@ -49,7 +49,7 @@ const Team = () => {
         <div className='team-container-mobile'>
             {
                 team.map((member, idx) => (<Card key={member.id} member={member} border={
-                    (idx === 2 || idx === 5) ? true : false
+                    (idx === 2 || idx === 5 || idx === 0) ? true : false
                 }/>))
             }
         </div>
