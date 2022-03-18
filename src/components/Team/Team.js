@@ -5,15 +5,15 @@ import teamMember2 from '../../assets/dog2.png';
 import teamMember3 from '../../assets/image1.jpeg';
 import teamMember4 from '../../assets/dog5.png';
 import teamMember5 from '../../assets/dog6.png';
-// import teamMember6 from '../../assets/image2.jpeg';
+import teamMember6 from '../../assets/image0.jpeg';
 
 const team = [
     { id: 0, memberName: 'Alfredo Lopez', img: teamMember1, rol: 'the frenchie whisper', description: 'NFT Market Analyst / Degenerate Collector / sports Enthusiast  '},
     { id: 1, memberName: 'Alejandro Oliva', img: teamMember2, rol: 'Developer', description: 'computer scientist / blockchain developer / a person who solves a problem you didn\'t know you had in a way you don\' t understand'},
     { id: 2, memberName: 'Michael Sabina', img: teamMember3, rol: 'social ninja', description: 'I have no real skill, Im just good with people.'},
     { id: 3, memberName: 'Yasmany Perez', img: teamMember4, rol: 'Artist', description: 'Artist & Creative / Senior graphic artist. I draw stuff'},
-    { id: 4, memberName: 'Leonardo Cordero', img: teamMember5, rol: 'Wicked Corporate Guy', description: 'insane network of smart people'}
-    // { id: 5, memberName: 'William Apespeare', img: teamMember6, rol: 'Advisor Ape', description: 'Helping the Miami Frenchie Club become a great community'}
+    { id: 4, memberName: 'Leonardo Cordero', img: teamMember5, rol: 'Wicked Corporate Guy', description: 'insane network of smart people'},
+    { id: 5, memberName: 'William Apespeare', img: teamMember6, rol: 'Advisor Ape', description: 'Helping the Miami Frenchie Club become a great community'}
 ];
 
 const Card = ({member, border}) => {
@@ -43,7 +43,7 @@ const Team = () => {
             <div className='team-subcontainer'>
                 <Card key={team[3].id} member={team[3]} border={false}/>
                 <Card key={team[4].id} member={team[4]} border={false}/>
-                {/* <Card key={team[5].id} member={team[5]} border={true}/> */}
+                <Card key={team[5].id} member={team[5]} border={true}/>
             </div>
         </div>
         <div className='team-container-mobile'>
